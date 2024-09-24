@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Favicon -->
+  <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2>Registration Form</h2>
+    <!--Registration Form -->
+    <form id="registrationForm" onSubmit="validateForm(event)">
+      <div class="form-group">
+        <input type="text" id="fullName" placeholder=" " onChange="validateForm()" required>
+        <label for="fullName">Full Name</label>
+        <div class="error" id="nameError" style="display: none;">Full Name must be between 3-20 characters and contain only letters.</div>
+      </div>
+      
+      <div class="form-group">
+        <input type="email" id="email" placeholder=" " onChange="validateForm()" required>
+        <label for="email">Email Address</label>
+        <div class="error" id="emailError" style="display: none;">Enter a valid email (example: user@domain.com).</div>
+      </div>
+      
+      <div class="form-group">
+        <input type="text" id="phone" placeholder=" " onChange="validateForm()" required>
+        <label for="phone">Phone Number</label>
+        <div class="error" id="phoneError" style="display: none;">Phone number must be between 8-15 digits and may include '+' for country code.</div>
+      </div>
+      
+      <div class="form-group">
+        <input type="password" id="password" placeholder=" " onChange="validateForm()" required>
+        <label for="password">Password</label>
+        <div class="error" id="passwordError" style="display: none;">Password must be 10-16 characters, with uppercase, lowercase, number, and symbol.</div>
+      </div>
+      
+      <div class="form-group">
+        <input type="password" id="confirmPassword" placeholder=" " onChange="validateForm()" required>
+        <label for="confirmPassword">Confirm Password</label>
+        <div class="error" id="confirmPasswordError" style="display: none;">Passwords do not match.</div>
+      </div>
+      
+      <button type="submit">Register</button>
+    </form>   
+  </div>
+
+  <!-- JavaScript for form validation -->
+  <script src="./js/app.js"></script>
+</body>
+</html>
