@@ -18,13 +18,21 @@ This is a modern, responsive **Registration Form** web application built with **
 
 ## 📂 Project Structure
 Registration-form/
+
 ├── index.html # Main HTML file
+
 ├── css/
+
 │ └── style.css # Custom styles (glassmorphism, responsiveness)
+
 ├── js/
+
 │ └── app.js # JavaScript validation logic
+
 ├── images/
+
 │ ├── 1.png # Background image
+
 │ └── favicon.png # Favicon icon
 
 
@@ -35,7 +43,7 @@ Registration-form/
 - Bootstrap 5
 - JavaScript (Vanilla)
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
 1. Clone the repository:
    ```bash
